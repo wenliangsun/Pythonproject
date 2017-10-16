@@ -30,4 +30,5 @@ sess.run(init)
 for step in range(0, 201):
     sess.run(train)
     if step % 20 == 0:
-        print(step,sess.run(w),sess.run(b))
+        print(step, sess.run(w), sess.run(b))
+
