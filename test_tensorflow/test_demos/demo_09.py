@@ -1,4 +1,7 @@
 """
+可视化学习 ： TensorBoard 
+"""
+"""
 softmax regression 实现mnist数据集的识别
 """
 

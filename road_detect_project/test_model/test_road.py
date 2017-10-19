@@ -53,6 +53,9 @@ b_fc2 = bias_variable([256])
 y = tf.nn.sigmoid(tf.matmul(h_fc1_drop, w_fc2) + b_fc2)
 y_out = tf.reshape(y, [-1, 16, 16])
 
+
+
+
 init = tf.global_variables_initializer()
 
 with tf.Session() as sess:

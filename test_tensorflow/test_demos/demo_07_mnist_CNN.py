@@ -92,13 +92,15 @@ with tf.Session() as sess:
         sess.run(train_step, feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
     saver.save(sess, r'./mnist_CNN_model/model.ckpt')
 """
-
+test_acc = tf.Variable(tf.zeros([0]))
 with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
     saver.restore(sess, r'./mnist_CNN_model/model.ckpt')
 
     for i in range(1000):
         test_batch = mnist.test.next_batch(30)
-        test_acc = sess.run(accuracy, feed_dict={x: test_batch[0],
-                                                 y_: test_batch[1],
-                                                 keep_prob: 1.0})
-        print("test accuracy %g" % test_acc)
+        test_acc += sess.run(accuracy, feed_dict={x: test_batch[0],
+                                                  y_: test_batch[1],
+                                                  keep_prob: 1.0})
+        # print("test accuracy %g" % test_acc)
+    print("test accuracy is %g" % (float(test_acc[0]) / float(1000)))
