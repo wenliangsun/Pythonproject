@@ -1,0 +1,7 @@
+QWidget#main {
+    background-color: #4330ff;
+    background-image: url("../../images/new_on.jpg");
+    margin: 5px;
+    border: 5px solid red;
+    background-attachment: scroll;
+}
