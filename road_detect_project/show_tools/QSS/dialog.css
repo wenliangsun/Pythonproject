@@ -1,0 +1,17 @@
+QPushButton {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 宋体;
+}
+
+QLabel {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 宋体;
+}
+
+QLineEdit {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 宋体;
+}

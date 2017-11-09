@@ -1,0 +1,65 @@
+QLabel {
+    color: yellow;
+    font-size: 22px;
+    font-family: 宋体;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+QLabel#title_label {
+    color: yellow;
+    font-size: 48px;
+    font-family: 宋体;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+QLabel#show_pic {
+    border: 3px solid midnightblue;
+    /*border-radius: 100px;*/
+}
+
+QPushButton {
+    background: yellow;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 宋体;
+}
+QRadioButton {
+    background: yellow;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 宋体;
+}
+
+QRadioButton#cnn_button:hover,
+QRadioButton#fcn_button:hover,
+QRadioButton#gan_button:hover {
+    color: red;
+}
+
+QRadioButton#cnn_button:pressed,
+QRadioButton#fcn_button:pressed,
+QRadioButton#gan_button:pressed {
+    color: gray;
+}
+
+QPushButton#cnn_but:focus,
+QPushButton#fcn_but:focus,
+QPushButton#gan_but:focus {
+    color: purple;
+
+}
+
+QLineEdit, QTextEdit {
+    background-color: gray;
+    font-size: 20px;
+    font-family: 宋体;
+    font-weight: bold;
+
+}
+
+QTextEdit {
+    background-color: black;
+    color: green;
+    border: 3px solid midnightblue;
+}
